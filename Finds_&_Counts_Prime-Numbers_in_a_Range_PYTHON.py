@@ -10,6 +10,11 @@ def error():
 
         #Finds the Prime Numbers in a given range:
         ip = int(input("Enter the range to find Prime Numbers: "))
+        if ip <= 0:
+            print("Wrong Input")
+            print("Input must be a positive value")
+            print("Start again..")
+            error()
 
         print("Prime Numbers: ")
 
